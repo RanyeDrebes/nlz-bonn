@@ -1,18 +1,54 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+/* Reset and full height */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
   background-color: black;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  height: 100vh;           /* full screen */
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
 
+/* Logo styling */
+.App img {
+  max-width: 40%;   /* responsive: scales with screen */
+  height: auto;
+  margin-bottom: 20px;
+}
 
+/* Headings */
+.App h1 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: white
+}
 
+.App h2 {
+  font-size: 1.2rem;
+  color: White;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .App h1 {
+    font-size: 1.4rem;
+  }
+
+  .App h2 {
+    font-size: 1rem;
+  }
+
+  .App img {
+    max-width: 70%;
+    margin-bottom: 15px;
+  }
+}
