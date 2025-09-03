@@ -20,7 +20,7 @@ body, html, #root {
 
 /* Logo styling */
 .App img {
-  max-width: 40%;   /* responsive: scales with screen */
+  max-width: 35%;   /* responsive: scales with screen */
   height: auto;
   margin-bottom: 20px;
 }
